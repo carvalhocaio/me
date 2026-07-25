@@ -1,7 +1,8 @@
 import { Container } from "./container";
 import { DecryptedText } from "./decrypted-text";
 
-const RESUME_URL = "/Caio-Carvalho-PT.pdf";
+const BASE_PATH = process.env.GITHUB_ACTIONS === "true" ? "/me" : "";
+const RESUME_URL = `${BASE_PATH}/Caio-Carvalho-PT.pdf`;
 
 export function Hero() {
   return (
