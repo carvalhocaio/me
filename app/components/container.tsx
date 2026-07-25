@@ -7,7 +7,7 @@ export function Container({
 }) {
   return (
     <div className={`grid grid-cols-12 ${className}`}>
-      <div className="col-span-12 md:col-start-2 md:col-span-10">
+      <div className="col-span-12 md:col-start-3 md:col-span-8">
         {children}
       </div>
     </div>

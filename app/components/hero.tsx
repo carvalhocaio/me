@@ -18,7 +18,7 @@ export function Hero() {
             <span className="h-[9px] w-[9px] rounded-full bg-[var(--accent)]" />
             <span className="h-[9px] w-[9px] rounded-full bg-[var(--border)]" />
             <span className="h-[9px] w-[9px] rounded-full bg-[var(--border)]" />
-            <span className="ml-2">~/caio-carvalho</span>
+            <span className="ml-2">~/carvalhocaio</span>
           </div>
 
           <p className="font-mono text-[13px] text-[var(--dim)]">
