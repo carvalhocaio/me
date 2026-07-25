@@ -1,7 +1,6 @@
 import { Container } from "./container";
 
-const RESUME_URL =
-  "https://drive.google.com/file/d/1-8fH2C5i3pGgk58ESddUC98gIwTxoIA9/view?usp=drive_link";
+const RESUME_URL = "/Caio-Carvalho-PT.pdf";
 
 export function Hero() {
   return (
@@ -43,7 +42,15 @@ export function Hero() {
 
           <div className="flex items-center gap-[9px] font-mono text-xs text-[var(--dim)]">
             <span className="h-2 w-2 animate-[pulse-dot_2s_ease-in-out_infinite] rounded-full bg-[var(--accent)]" />
-            status: available_for_work
+            status: trabalhando na{" "}
+            <a
+              href="https://www.scheffer.agr.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--text)] underline decoration-[var(--border)] underline-offset-2 transition-colors hover:text-[var(--accent)]"
+            >
+              Scheffer
+            </a>
           </div>
 
           <div className="mt-0.5 flex flex-wrap gap-3 font-mono">
@@ -53,7 +60,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="bg-[var(--accent)] px-[18px] py-[11px] text-[13px] text-[var(--bg)] transition-opacity hover:opacity-90"
             >
-              [ view_resume ]
+              [ ver_currículo ]
             </a>
             <a
               href="mailto:caiocarvalho.py@gmail.com"

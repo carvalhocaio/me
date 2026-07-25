@@ -2,11 +2,11 @@ import { Container } from "./container";
 import { ThemeToggle } from "./theme-toggle";
 
 const NAV_LINKS = [
-  { href: "#journey", label: "journey" },
-  { href: "#now", label: "now" },
-  { href: "#projects", label: "projects" },
-  { href: "#next", label: "next" },
-  { href: "#connect", label: "connect" },
+  { href: "#journey", label: "jornada" },
+  { href: "#now", label: "agora" },
+  { href: "#projects", label: "projetos" },
+  { href: "#next", label: "próximo" },
+  { href: "#connect", label: "contato" },
 ];
 
 export function Header() {
