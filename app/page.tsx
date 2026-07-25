@@ -1,3 +1,5 @@
+import { Connect } from "./components/connect";
+import { Footer } from "./components/footer";
 import { Hero } from "./components/hero";
 import { Journey } from "./components/journey";
 import { Now } from "./components/now";
@@ -12,6 +14,8 @@ export default function Home() {
       <Now />
       <Projects />
       <Posts />
+      <Connect />
+      <Footer />
     </main>
   );
 }
