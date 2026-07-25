@@ -53,13 +53,16 @@ export function Journey() {
             <div
               key={entry.year}
               data-reveal
-              className="grid grid-cols-[96px_1fr] gap-5 border-t border-dashed border-[var(--border)] py-[22px]"
+              className="border-t border-dashed border-[var(--border)] py-[22px] sm:grid sm:grid-cols-[96px_1fr] sm:gap-5"
             >
-              <span className="pt-[3px] font-mono text-[13px] text-[var(--accent)]">
+              <span className="hidden pt-[3px] font-mono text-[13px] text-[var(--accent)] sm:block">
                 {entry.year}
               </span>
               <div className="flex max-w-[66ch] flex-col gap-1.5">
                 <h3 className="font-mono text-[17px] font-semibold text-[var(--text)]">
+                  <span className="text-[var(--accent)] sm:hidden">
+                    {entry.year}{" "}
+                  </span>
                   {entry.title}
                 </h3>
                 <p className="font-mono text-xs text-[var(--dim)]">
