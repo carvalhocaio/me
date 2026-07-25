@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import { Header } from "./components/header";
 import { RevealController } from "./components/reveal-controller";
 
 const ibmPlexSans = IBM_Plex_Sans({
@@ -40,6 +41,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen font-sans antialiased" suppressHydrationWarning>
         <RevealController />
+        <Header />
         {children}
       </body>
     </html>

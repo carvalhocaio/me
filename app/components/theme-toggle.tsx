@@ -9,8 +9,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="border px-3 py-1 font-mono text-xs"
-      style={{ borderColor: "var(--border)", color: "var(--text)" }}
+      className="border border-[var(--border)] px-2.5 py-[5px] font-mono text-xs text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
     >
       [{theme}]
     </button>
