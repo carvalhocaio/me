@@ -1,4 +1,5 @@
 import { Container } from "./container";
+import { DecryptedText } from "./decrypted-text";
 
 const RESUME_URL = "/Caio-Carvalho-PT.pdf";
 
@@ -25,9 +26,17 @@ export function Hero() {
           </p>
 
           <h1 className="font-sans text-[clamp(40px,8vw,92px)] leading-[0.98] font-bold tracking-[-0.02em] text-[var(--text)]">
-            Caio
+            <DecryptedText
+              text="Caio"
+              encryptedClassName="text-[var(--accent)]"
+              speed={35}
+            />
             <br />
-            Carvalho
+            <DecryptedText
+              text="Carvalho"
+              encryptedClassName="text-[var(--accent)]"
+              speed={35}
+            />
           </h1>
 
           <p className="font-mono text-[13px] tracking-[0.02em] text-[var(--accent)]">

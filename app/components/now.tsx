@@ -1,4 +1,5 @@
 import { Container } from "./container";
+import { SpotlightCard } from "./spotlight-card";
 
 const FOCUS = [
   {
@@ -34,7 +35,7 @@ export function Now() {
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(230px,1fr))] gap-3.5">
           {FOCUS.map((item) => (
-            <div
+            <SpotlightCard
               key={item.n}
               data-reveal
               className="flex flex-col gap-3 border border-[var(--border)] bg-[var(--panel)] px-5 py-[22px]"
@@ -48,7 +49,7 @@ export function Now() {
               <p className="text-sm leading-relaxed text-[var(--dim)]">
                 {item.desc}
               </p>
-            </div>
+            </SpotlightCard>
           ))}
         </div>
       </Container>
