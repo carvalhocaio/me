@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { href: "#journey", label: "jornada" },
   { href: "#now", label: "agora" },
   { href: "#projects", label: "projetos" },
-  { href: "#next", label: "próximo" },
+  { href: "#posts", label: "posts" },
   { href: "#connect", label: "contato" },
 ];
 

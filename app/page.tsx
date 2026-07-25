@@ -1,7 +1,7 @@
 import { Hero } from "./components/hero";
 import { Journey } from "./components/journey";
-import { NextSection } from "./components/next-section";
 import { Now } from "./components/now";
+import { Posts } from "./components/posts";
 import { Projects } from "./components/projects";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Journey />
       <Now />
       <Projects />
-      <NextSection />
+      <Posts />
     </main>
   );
 }
