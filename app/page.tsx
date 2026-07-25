@@ -1,6 +1,7 @@
 import { Hero } from "./components/hero";
 import { Journey } from "./components/journey";
 import { Now } from "./components/now";
+import { Projects } from "./components/projects";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Journey />
       <Now />
+      <Projects />
     </main>
   );
 }
