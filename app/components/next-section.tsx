@@ -19,9 +19,9 @@ export function NextSection() {
           className="max-w-[40ch] text-[clamp(19px,2.6vw,28px)] leading-snug text-[var(--text)]"
         >
           <span className="font-mono text-[var(--accent)]">/* </span>
-          Aprofundando em arquiteturas agênticas — sistemas que não só
-          respondem, mas decidem e agem — sem perder a disciplina de backend
-          que os mantém confiáveis em produção.
+          De scanners de segurança a agentes em produção — essa é a base que
+          quero aprofundar rumo a engenheiro sênior e, depois, a uma trilha
+          técnica de liderança: tech lead, especialista, staff.
           <span className="font-mono text-[var(--accent)]"> */</span>
         </p>
       </Container>
