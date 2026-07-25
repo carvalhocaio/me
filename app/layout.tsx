@@ -17,7 +17,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Caio Carvalho",
+  title: "Caio Carvalho (@carvalhocaio)",
   description: "Engenheiro de Dados & IA — Python, GCP, LLMs.",
 };
 
