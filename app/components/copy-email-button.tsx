@@ -20,7 +20,7 @@ export function CopyEmailButton() {
   return (
     <div
       data-reveal
-      className="flex items-center justify-between gap-4 border-t border-b border-dashed border-[var(--border)] px-1.5 py-[18px] font-mono"
+      className="flex flex-col items-stretch gap-3 border-t border-b border-dashed border-[var(--border)] px-1.5 py-[18px] font-mono sm:flex-row sm:items-center sm:justify-between sm:gap-4"
     >
       <span className="flex min-w-0 items-center gap-3.5">
         <span className="text-[var(--accent)]">@</span>
@@ -36,8 +36,8 @@ export function CopyEmailButton() {
         onClick={handleCopy}
         className={
           copied
-            ? "shrink-0 border border-[var(--accent)] px-3.5 py-1.5 text-xs text-[var(--accent)] transition-colors"
-            : "shrink-0 border border-[var(--border)] px-3.5 py-1.5 text-xs text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            ? "w-full shrink-0 border border-[var(--accent)] px-3.5 py-1.5 text-xs text-[var(--accent)] transition-colors sm:w-auto"
+            : "w-full shrink-0 border border-[var(--border)] px-3.5 py-1.5 text-xs text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:w-auto"
         }
       >
         [ copiar ]
