@@ -36,7 +36,7 @@ export function CopyEmailButton() {
         onClick={handleCopy}
         aria-label="Copiar email"
         title="Copiar email"
-        className="shrink-0 border border-[var(--border)] p-2 text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+        className="shrink-0 border border-[var(--border)] p-2 text-xs text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:px-3.5 sm:py-1.5"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -49,10 +49,12 @@ export function CopyEmailButton() {
           strokeLinecap="round"
           strokeLinejoin="round"
           aria-hidden="true"
+          className="sm:hidden"
         >
           <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
           <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
         </svg>
+        <span className="hidden sm:inline">[ copiar ]</span>
       </button>
     </div>
   );
