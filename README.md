@@ -1,27 +1,27 @@
 # carvalhocaio/me
 
-Site pessoal de [Caio Carvalho](https://carvalhocaio.github.io/me/) — engenheiro de dados & IA. Landing page única com identidade visual de terminal (prompt de shell, cursor piscando, tema dark/light), construída em Next.js.
+Personal site of [Caio Carvalho](https://carvalhocaio.github.io/me/) — data & AI engineer. Single-page landing with a terminal visual identity (shell prompt, blinking cursor, dark/light theme), built with Next.js.
 
 ## Stack
 
 - [Next.js](https://nextjs.org) (App Router) + TypeScript
 - [Tailwind CSS v4](https://tailwindcss.com)
-- Export estático (`output: 'export'`) — sem servidor, publicado como site estático
-- Fontes IBM Plex Mono / IBM Plex Sans
-- Alguns componentes inspirados no [React Bits](https://reactbits.dev) (decrypt-text no hero, spotlight nos cards)
+- Static export (`output: 'export'`) — no server, published as a static site
+- IBM Plex Mono / IBM Plex Sans fonts
+- Some components inspired by [React Bits](https://reactbits.dev) (decrypt-text in the hero, spotlight on the cards)
 
-## Estrutura
+## Structure
 
-Cada seção da página é um componente em `app/components/`: `header`, `hero`, `now` (agora), `projects` (4 repositórios públicos mais recentemente atualizados no GitHub, buscados em build-time), `posts` (feed do [dev.to](https://dev.to/carvalhocaio), buscado em build-time), `connect` (contato) e `footer`. `Container` centraliza o conteúdo em 8 das 12 colunas da grade a partir do breakpoint `sm`.
+Each page section is a component in `app/components/`: `header`, `hero`, `now`, `projects` (the 4 most recently updated public GitHub repos, fetched at build time), `posts` (feed from [dev.to](https://dev.to/carvalhocaio), fetched at build time), `connect`, and `footer`. `Container` centers content in 8 of the grid's 12 columns from the `sm` breakpoint up.
 
-## Desenvolvimento local
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Build
 
@@ -29,10 +29,10 @@ Abra [http://localhost:3000](http://localhost:3000).
 npm run build
 ```
 
-Gera o export estático em `dist/`.
+Generates the static export in `dist/`.
 
 ## Deploy
 
-Publicado no GitHub Pages via GitHub Actions (`.github/workflows/nextjs.yml`), a cada push em `main` e também 1x por dia (cron), para manter o feed de posts do dev.to atualizado sem precisar de um redeploy manual.
+Published to GitHub Pages via GitHub Actions (`.github/workflows/nextjs.yml`), on every push to `main` and also once a day (cron), to keep the dev.to posts feed fresh without a manual redeploy.
 
-Site no ar: **https://carvalhocaio.github.io/me/**
+Live site: **https://carvalhocaio.github.io/me/**
