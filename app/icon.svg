@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="6" fill="#0a0b0d" />
+  <rect width="32" height="32" rx="6" fill="#0b0a06" />
   <text
     x="16"
     y="22"
@@ -7,6 +7,6 @@
     font-family="IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
     font-size="16"
     font-weight="700"
-    fill="#4ade80"
+    fill="#fce300"
   >&gt;_</text>
 </svg>
