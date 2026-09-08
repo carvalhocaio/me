@@ -6,23 +6,23 @@
 }
 
 [data-theme="dark"] {
-  --bg: #0a0b0d;
+  --bg: #0b0a06;
   --panel: rgba(255, 255, 255, 0.03);
-  --header-bg: rgba(10, 11, 13, 0.82);
+  --header-bg: rgba(11, 10, 6, 0.82);
   --text: #d8dce2;
   --dim: #6b7280;
   --border: rgba(255, 255, 255, 0.12);
-  --accent: #4ade80;
+  --accent: #fce300;
 }
 
 [data-theme="light"] {
-  --bg: #f4f4ef;
+  --bg: #eef2f4;
   --panel: rgba(0, 0, 0, 0.02);
-  --header-bg: rgba(244, 244, 239, 0.82);
+  --header-bg: rgba(238, 242, 244, 0.82);
   --text: #14161a;
   --dim: #6b7280;
   --border: rgba(0, 0, 0, 0.14);
-  --accent: #16a34a;
+  --accent: #8a6800;
 }
 
 html[data-theme="dark"] {
@@ -52,7 +52,7 @@ a {
 }
 
 ::selection {
-  background: #4ade8044;
+  background: #fce30055;
 }
 
 @keyframes blink {

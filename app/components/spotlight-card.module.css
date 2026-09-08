@@ -2,7 +2,7 @@
   position: relative;
   --mouse-x: 50%;
   --mouse-y: 50%;
-  --spotlight-color: rgba(74, 222, 128, 0.15);
+  --spotlight-color: rgba(252, 227, 0, 0.15);
 }
 
 .spotlight::before {
