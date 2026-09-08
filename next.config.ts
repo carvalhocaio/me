@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
-
-const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+import { BASE_PATH } from "./app/lib/base-path";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -8,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  ...(isGithubActions ? { basePath: "/me", assetPrefix: "/me" } : {}),
+  ...(BASE_PATH ? { basePath: BASE_PATH, assetPrefix: BASE_PATH } : {}),
 };
 
 export default nextConfig;

@@ -1,4 +1,5 @@
 import { Container } from "./container";
+import { FeedList } from "./feed-list";
 
 type DevToArticle = {
   id: number;
@@ -53,56 +54,25 @@ export async function Posts() {
             href="https://dev.to/carvalhocaio"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-xs text-(--dim) transition-colors hover:text-(--accent)"
+            className="font-mono text-xs text-(--dim) transition-colors hover:text-(--accent) active:text-(--accent)"
           >
             view profile →
           </a>
         </div>
-        {posts.length === 0 ? (
-          <p data-reveal className="text-sm text-(--dim)">
-            Couldn&apos;t load the posts right now — check them directly
-            on{" "}
-            <a
-              href="https://dev.to/carvalhocaio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-(--accent) underline"
-            >
-              dev.to
-            </a>
-            .
-          </p>
-        ) : (
-          <div>
-            {posts.map((post, index) => (
-              <a
-                key={post.id}
-                data-reveal
-                href={post.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-baseline justify-between gap-4.5 border-t border-dashed border-(--border) px-1.5 py-5.5 text-(--text) transition-colors hover:bg-(--panel)"
-              >
-                <span className="flex min-w-0 items-baseline gap-4">
-                  <span className="shrink-0 font-mono text-[13px] text-(--dim)">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span className="flex min-w-0 flex-col gap-1.5">
-                    <span className="font-mono text-[15px] font-semibold text-(--accent)">
-                      {post.title}
-                    </span>
-                    <span className="text-xs text-(--dim)">
-                      {dateFormatter.format(new Date(post.published_at))}
-                    </span>
-                  </span>
-                </span>
-                <span className="shrink-0 font-mono text-[13px] text-(--dim)">
-                  read →
-                </span>
-              </a>
-            ))}
-          </div>
-        )}
+        <FeedList
+          items={posts.map((post) => ({
+            key: post.id,
+            href: post.url,
+            primary: post.title,
+            secondary: dateFormatter.format(new Date(post.published_at)),
+          }))}
+          actionLabel="read →"
+          primaryClassName="break-words font-mono text-[15px] font-semibold text-(--accent)"
+          secondaryClassName="text-xs text-(--dim)"
+          emptyMessage="Couldn't load the posts right now — check them directly on"
+          emptyLinkHref="https://dev.to/carvalhocaio"
+          emptyLinkLabel="dev.to"
+        />
       </Container>
     </section>
   );

@@ -44,7 +44,7 @@ export function Connect() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between gap-4 border-t border-dashed border-(--border) px-1.5 py-4.5 font-mono text-(--text) transition-colors hover:bg-(--panel)"
+              className="flex items-center justify-between gap-4 border-t border-dashed border-(--border) px-1.5 py-4.5 font-mono text-(--text) transition-colors hover:bg-(--panel) active:bg-(--panel)"
             >
               <span className="flex min-w-0 items-center gap-3.5">
                 <span className="text-(--accent)">{link.id}</span>

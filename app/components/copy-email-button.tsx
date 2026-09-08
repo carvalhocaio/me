@@ -27,20 +27,18 @@ export function CopyEmailButton() {
         <span className="select-all text-base text-(--text)">
           {EMAIL}
         </span>
-        <span className="hidden text-[13px] text-(--dim) sm:inline">
-          {copied ? "copied ✓" : ""}
-        </span>
       </span>
       <button
         type="button"
         onClick={handleCopy}
+        aria-live="polite"
         className={
           copied
             ? "w-full shrink-0 border border-(--accent) px-3.5 py-1.5 text-xs text-(--accent) transition-colors sm:w-auto"
-            : "w-full shrink-0 border border-(--border) px-3.5 py-1.5 text-xs text-(--text) transition-colors hover:border-(--accent) hover:text-(--accent) sm:w-auto"
+            : "w-full shrink-0 border border-(--border) px-3.5 py-1.5 text-xs text-(--text) transition-colors hover:border-(--accent) hover:text-(--accent) active:border-(--accent) active:text-(--accent) sm:w-auto"
         }
       >
-        [ copy ]
+        {copied ? "[ copied ✓ ]" : "[ copy ]"}
       </button>
     </div>
   );

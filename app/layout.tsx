@@ -18,7 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "Caio Carvalho (@carvalhocaio)",
-  description: "Engenheiro de Dados & IA — Python, GCP, LLMs.",
+  description: "Data & AI Engineer — Python, GCP, LLMs.",
 };
 
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('cc2-theme');if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt-BR"
+      lang="en"
       data-theme="dark"
       suppressHydrationWarning
       className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}

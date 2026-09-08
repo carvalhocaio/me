@@ -1,4 +1,5 @@
 import { Container } from "./container";
+import { FeedList } from "./feed-list";
 
 type GitHubRepo = {
   name: string;
@@ -52,56 +53,25 @@ export async function Projects() {
             href="https://github.com/carvalhocaio?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-xs text-(--dim) transition-colors hover:text-(--accent)"
+            className="font-mono text-xs text-(--dim) transition-colors hover:text-(--accent) active:text-(--accent)"
           >
             git remote -v →
           </a>
         </div>
-        {projects.length === 0 ? (
-          <p data-reveal className="text-sm text-(--dim)">
-            Couldn&apos;t load the projects right now — check them directly
-            on{" "}
-            <a
-              href="https://github.com/carvalhocaio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-(--accent) underline"
-            >
-              GitHub
-            </a>
-            .
-          </p>
-        ) : (
-          <div>
-            {projects.map((project, index) => (
-              <a
-                key={project.name}
-                data-reveal
-                href={project.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-baseline justify-between gap-4.5 border-t border-dashed border-(--border) px-1.5 py-5.5 text-(--text) transition-colors hover:bg-(--panel)"
-              >
-                <span className="flex min-w-0 items-baseline gap-4">
-                  <span className="shrink-0 font-mono text-[13px] text-(--dim)">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span className="flex min-w-0 flex-col gap-1.5">
-                    <span className="font-mono text-[17px] font-semibold text-(--accent)">
-                      ./{project.name}
-                    </span>
-                    <span className="max-w-[62ch] text-sm leading-[1.55] text-(--dim)">
-                      {project.description ?? "No description yet."}
-                    </span>
-                  </span>
-                </span>
-                <span className="shrink-0 font-mono text-[13px] text-(--dim)">
-                  open →
-                </span>
-              </a>
-            ))}
-          </div>
-        )}
+        <FeedList
+          items={projects.map((project) => ({
+            key: project.name,
+            href: project.html_url,
+            primary: `./${project.name}`,
+            secondary: project.description ?? "No description yet.",
+          }))}
+          actionLabel="open →"
+          primaryClassName="font-mono text-[17px] font-semibold text-(--accent)"
+          secondaryClassName="max-w-[62ch] break-words text-sm leading-[1.55] text-(--dim)"
+          emptyMessage="Couldn't load the projects right now — check them directly on"
+          emptyLinkHref="https://github.com/carvalhocaio"
+          emptyLinkLabel="GitHub"
+        />
       </Container>
     </section>
   );

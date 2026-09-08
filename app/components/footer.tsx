@@ -10,7 +10,7 @@ export function Footer() {
           <span>@ {year} carvalhocaio</span>
           <a
             href="#top"
-            className="transition-colors hover:text-(--accent)"
+            className="transition-colors hover:text-(--accent) active:text-(--accent)"
           >
             back_to_top ↑
           </a>
