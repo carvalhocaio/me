@@ -2,7 +2,7 @@ import { Container } from "./container";
 import { DecryptedText } from "./decrypted-text";
 
 const BASE_PATH = process.env.GITHUB_ACTIONS === "true" ? "/me" : "";
-const RESUME_URL = `${BASE_PATH}/Caio-Carvalho-PT.pdf`;
+const RESUME_URL = `${BASE_PATH}/resumee.pdf`;
 
 export function Hero() {
   return (
@@ -13,51 +13,44 @@ export function Hero() {
       <Container>
         <div
           data-reveal
-          className="flex flex-col gap-5 border border-[var(--border)] bg-[var(--panel)] p-[clamp(20px,3vw,36px)]"
+          className="flex flex-col gap-5 border border-(--border) bg-(--panel) p-[clamp(20px,3vw,36px)]"
         >
-          <div className="flex items-center gap-2 font-mono text-xs text-[var(--dim)]">
-            <span className="h-[9px] w-[9px] rounded-full bg-[var(--accent)]" />
-            <span className="h-[9px] w-[9px] rounded-full bg-[var(--border)]" />
-            <span className="h-[9px] w-[9px] rounded-full bg-[var(--border)]" />
+          <div className="flex items-center gap-2 font-mono text-xs text-(--dim)">
+            <span className="h-2.25 w-2.25 rounded-full bg-(--accent)" />
+            <span className="h-2.25 w-2.25 rounded-full bg-(--border)" />
+            <span className="h-2.25 w-2.25 rounded-full bg-(--border)" />
             <span className="ml-2">~/carvalhocaio</span>
           </div>
 
-          <p className="font-mono text-[13px] text-[var(--dim)]">
-            <span className="text-[var(--accent)]">$</span> whoami
+          <p className="font-mono text-[13px] text-(--dim)">
+            <span className="text-(--accent)">$</span> whoami
           </p>
 
-          <h1 className="font-sans text-[clamp(40px,8vw,92px)] leading-[0.98] font-bold tracking-[-0.02em] text-[var(--text)]">
+          <h1 className="font-sans text-[clamp(40px,8vw,92px)] leading-[0.98] font-bold tracking-[-0.02em] text-(--text)">
             <DecryptedText
               text="Caio"
               encryptedClassName="text-[var(--accent)]"
               speed={35}
             />
-            <br />
             <DecryptedText
-              text="Carvalho"
+              text=" Carvalho"
               encryptedClassName="text-[var(--accent)]"
               speed={35}
             />
           </h1>
 
-          <p className="font-mono text-[13px] tracking-[0.02em] text-[var(--accent)]">
-            // dados · ia · engenharia de software
+          <p className="font-mono text-[13px] tracking-[0.02em] text-(--accent)">
+            software · data · ai
           </p>
 
-          <p className="max-w-[52ch] font-sans text-[clamp(16px,1.8vw,19px)] leading-relaxed text-[var(--text)]">
-            Construo os sistemas onde dados e inteligência artificial se
-            encontram — de pipelines a agentes de IA em produção.
-            <span className="ml-[3px] inline-block h-[1.1em] w-[9px] translate-y-[2px] animate-[blink_1.1s_step-end_infinite] bg-[var(--accent)]" />
-          </p>
-
-          <div className="flex items-center gap-[9px] font-mono text-xs text-[var(--dim)]">
-            <span className="h-2 w-2 animate-[pulse-dot_2s_ease-in-out_infinite] rounded-full bg-[var(--accent)]" />
-            status: trabalhando na{" "}
+          <div className="flex items-center gap-2.25 font-mono text-xs text-(--dim)">
+            <span className="h-2 w-2 animate-[pulse-dot_2s_ease-in-out_infinite] rounded-full bg-(--accent)" />
+            status: working at the{" "}
             <a
               href="https://www.scheffer.agr.br/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--text)] underline decoration-[var(--border)] underline-offset-2 transition-colors hover:text-[var(--accent)]"
+              className="text-(--text) underline decoration-(--border) underline-offset-2 transition-colors hover:text-(--accent)"
             >
               Scheffer
             </a>
@@ -68,13 +61,13 @@ export function Hero() {
               href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[var(--accent)] px-[18px] py-[11px] text-[13px] text-[var(--bg)] transition-opacity hover:opacity-90"
+              className="bg-(--accent) px-4.5 py-2.75 text-[13px] text-(--bg) transition-opacity hover:opacity-90"
             >
-              [ ver_currículo ]
+              [ view_resume ]
             </a>
             <a
               href="mailto:caiocarvalho.py@gmail.com"
-              className="border border-[var(--border)] px-[18px] py-[10px] text-[13px] text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+              className="border border-(--border) px-4.5 py-2.5 text-[13px] text-(--text) transition-colors hover:border-(--accent) hover:text-(--accent)"
             >
               [ email ]
             </a>

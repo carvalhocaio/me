@@ -20,15 +20,15 @@ export function CopyEmailButton() {
   return (
     <div
       data-reveal
-      className="flex flex-col items-stretch gap-3 border-t border-b border-dashed border-[var(--border)] px-1.5 py-[18px] font-mono sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+      className="flex flex-col items-stretch gap-3 border-t border-b border-dashed border-(--border) px-1.5 py-4.5 font-mono sm:flex-row sm:items-center sm:justify-between sm:gap-4"
     >
       <span className="flex min-w-0 items-center gap-3.5">
-        <span className="text-[var(--accent)]">@</span>
-        <span className="select-all text-base text-[var(--text)]">
+        <span className="text-(--accent)">@</span>
+        <span className="select-all text-base text-(--text)">
           {EMAIL}
         </span>
-        <span className="hidden text-[13px] text-[var(--dim)] sm:inline">
-          {copied ? "copiado ✓" : "principal"}
+        <span className="hidden text-[13px] text-(--dim) sm:inline">
+          {copied ? "copied ✓" : ""}
         </span>
       </span>
       <button
@@ -36,11 +36,11 @@ export function CopyEmailButton() {
         onClick={handleCopy}
         className={
           copied
-            ? "w-full shrink-0 border border-[var(--accent)] px-3.5 py-1.5 text-xs text-[var(--accent)] transition-colors sm:w-auto"
-            : "w-full shrink-0 border border-[var(--border)] px-3.5 py-1.5 text-xs text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:w-auto"
+            ? "w-full shrink-0 border border-(--accent) px-3.5 py-1.5 text-xs text-(--accent) transition-colors sm:w-auto"
+            : "w-full shrink-0 border border-(--border) px-3.5 py-1.5 text-xs text-(--text) transition-colors hover:border-(--accent) hover:text-(--accent) sm:w-auto"
         }
       >
-        [ copiar ]
+        [ copy ]
       </button>
     </div>
   );

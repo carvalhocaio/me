@@ -6,13 +6,13 @@ export function Footer() {
   return (
     <footer className="px-[clamp(18px,5vw,56px)] py-6">
       <Container>
-        <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-[var(--dim)]">
+        <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-(--dim)">
           <span>@ {year} carvalhocaio</span>
           <a
             href="#top"
-            className="transition-colors hover:text-[var(--accent)]"
+            className="transition-colors hover:text-(--accent)"
           >
-            voltar_ao_topo ↑
+            back_to_top ↑
           </a>
         </div>
       </Container>

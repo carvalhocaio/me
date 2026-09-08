@@ -5,19 +5,19 @@ const LINKS = [
   {
     id: "in",
     label: "linkedin",
-    desc: "veja minha carreira",
+    desc: "see my career",
     url: "https://www.linkedin.com/in/1caiocarvalho/",
   },
   {
     id: "gh",
     label: "github",
-    desc: "veja meus projetos",
+    desc: "see my projects",
     url: "https://github.com/carvalhocaio",
   },
   {
     id: "dt",
     label: "dev.to",
-    desc: "veja meus posts",
+    desc: "check out my posts.",
     url: "https://dev.to/carvalhocaio",
   },
 ];
@@ -26,15 +26,15 @@ export function Connect() {
   return (
     <section
       id="connect"
-      className="border-t border-[var(--border)] px-[clamp(18px,5vw,56px)] py-[clamp(44px,7vw,84px)]"
+      className="border-t border-(--border) px-[clamp(18px,5vw,56px)] py-[clamp(44px,7vw,84px)]"
     >
       <Container>
         <div
           data-reveal
-          className="mb-8 font-mono text-[clamp(15px,2.4vw,20px)] text-[var(--text)]"
+          className="mb-8 font-mono text-[clamp(15px,2.4vw,20px)] text-(--text)"
         >
-          <span className="text-[var(--accent)]">[ 05 ]</span> contato
-          <span className="text-[var(--dim)]"> — curl</span>
+          <span className="text-(--accent)">[ 05 ]</span> contact
+          <span className="text-(--dim)"> — curl</span>
         </div>
         <div>
           {LINKS.map((link) => (
@@ -44,16 +44,16 @@ export function Connect() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between gap-4 border-t border-dashed border-[var(--border)] px-1.5 py-[18px] font-mono text-[var(--text)] transition-colors hover:bg-[var(--panel)]"
+              className="flex items-center justify-between gap-4 border-t border-dashed border-(--border) px-1.5 py-4.5 font-mono text-(--text) transition-colors hover:bg-(--panel)"
             >
               <span className="flex min-w-0 items-center gap-3.5">
-                <span className="text-[var(--accent)]">{link.id}</span>
+                <span className="text-(--accent)">{link.id}</span>
                 <span className="text-base">{link.label}</span>
-                <span className="text-[13px] text-[var(--dim)]">
+                <span className="text-[13px] text-(--dim)">
                   {link.desc}
                 </span>
               </span>
-              <span className="shrink-0 text-sm text-[var(--dim)]">→</span>
+              <span className="shrink-0 text-sm text-(--dim)">→</span>
             </a>
           ))}
           <CopyEmailButton />
