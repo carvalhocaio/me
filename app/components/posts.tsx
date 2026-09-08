@@ -26,7 +26,7 @@ async function getLatestPosts(): Promise<DevToArticle[]> {
   }
 }
 
-const dateFormatter = new Intl.DateTimeFormat("pt-BR", {
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
   day: "2-digit",
   month: "short",
   year: "numeric",
@@ -55,12 +55,13 @@ export async function Posts() {
             rel="noopener noreferrer"
             className="font-mono text-xs text-[var(--dim)] transition-colors hover:text-[var(--accent)]"
           >
-            ver perfil →
+            view profile →
           </a>
         </div>
         {posts.length === 0 ? (
           <p data-reveal className="text-sm text-[var(--dim)]">
-            Não consegui carregar os posts agora — veja direto no{" "}
+            Couldn&apos;t load the posts right now — check them directly
+            on{" "}
             <a
               href="https://dev.to/carvalhocaio"
               target="_blank"
@@ -96,7 +97,7 @@ export async function Posts() {
                   </span>
                 </span>
                 <span className="shrink-0 font-mono text-[13px] text-[var(--dim)]">
-                  ler →
+                  read →
                 </span>
               </a>
             ))}
