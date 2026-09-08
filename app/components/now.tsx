@@ -23,30 +23,30 @@ export function Now() {
   return (
     <section
       id="now"
-      className="border-t border-[var(--border)] px-[clamp(18px,5vw,56px)] py-[clamp(44px,7vw,84px)]"
+      className="border-t border-(--border) px-[clamp(18px,5vw,56px)] py-[clamp(44px,7vw,84px)]"
     >
       <Container>
         <div
           data-reveal
-          className="mb-8 font-mono text-[clamp(15px,2.4vw,20px)] text-[var(--text)]"
+          className="mb-8 font-mono text-[clamp(15px,2.4vw,20px)] text-(--text)"
         >
-          <span className="text-[var(--accent)]">[ 01 ]</span> now
-          <span className="text-[var(--dim)]"> — ps aux</span>
+          <span className="text-(--accent)">[ 01 ]</span> now
+          <span className="text-(--dim)"> — ps aux</span>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(230px,1fr))] gap-3.5">
           {FOCUS.map((item) => (
             <SpotlightCard
               key={item.n}
               data-reveal
-              className="flex flex-col gap-3 border border-[var(--border)] bg-[var(--panel)] px-5 py-[22px]"
+              className="flex flex-col gap-3 border border-(--border) bg-(--panel) px-5 py-5.5"
             >
-              <span className="font-mono text-xs text-[var(--accent)]">
+              <span className="font-mono text-xs text-(--accent)">
                 {item.n}
               </span>
-              <h3 className="font-mono text-base font-semibold text-[var(--text)]">
+              <h3 className="font-mono text-base font-semibold text-(--text)">
                 {item.title}
               </h3>
-              <p className="text-sm leading-relaxed text-[var(--dim)]">
+              <p className="text-sm leading-relaxed text-(--dim)">
                 {item.desc}
               </p>
             </SpotlightCard>

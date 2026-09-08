@@ -37,35 +37,35 @@ export async function Projects() {
   return (
     <section
       id="projects"
-      className="border-t border-[var(--border)] px-[clamp(18px,5vw,56px)] py-[clamp(44px,7vw,84px)]"
+      className="border-t border-(--border) px-[clamp(18px,5vw,56px)] py-[clamp(44px,7vw,84px)]"
     >
       <Container>
         <div
           data-reveal
           className="mb-8 flex flex-wrap items-baseline justify-between gap-3.5"
         >
-          <span className="font-mono text-[clamp(15px,2.4vw,20px)] text-[var(--text)]">
-            <span className="text-[var(--accent)]">[ 02 ]</span> projects
-            <span className="text-[var(--dim)]"> — ls ./repos</span>
+          <span className="font-mono text-[clamp(15px,2.4vw,20px)] text-(--text)">
+            <span className="text-(--accent)">[ 02 ]</span> projects
+            <span className="text-(--dim)"> — ls ./repos</span>
           </span>
           <a
             href="https://github.com/carvalhocaio?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-xs text-[var(--dim)] transition-colors hover:text-[var(--accent)]"
+            className="font-mono text-xs text-(--dim) transition-colors hover:text-(--accent)"
           >
             git remote -v →
           </a>
         </div>
         {projects.length === 0 ? (
-          <p data-reveal className="text-sm text-[var(--dim)]">
+          <p data-reveal className="text-sm text-(--dim)">
             Couldn&apos;t load the projects right now — check them directly
             on{" "}
             <a
               href="https://github.com/carvalhocaio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--accent)] underline"
+              className="text-(--accent) underline"
             >
               GitHub
             </a>
@@ -80,22 +80,22 @@ export async function Projects() {
                 href={project.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-baseline justify-between gap-4.5 border-t border-dashed border-[var(--border)] px-1.5 py-[22px] text-[var(--text)] transition-colors hover:bg-[var(--panel)]"
+                className="flex items-baseline justify-between gap-4.5 border-t border-dashed border-(--border) px-1.5 py-5.5 text-(--text) transition-colors hover:bg-(--panel)"
               >
                 <span className="flex min-w-0 items-baseline gap-4">
-                  <span className="shrink-0 font-mono text-[13px] text-[var(--dim)]">
+                  <span className="shrink-0 font-mono text-[13px] text-(--dim)">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span className="flex min-w-0 flex-col gap-1.5">
-                    <span className="font-mono text-[17px] font-semibold text-[var(--accent)]">
+                    <span className="font-mono text-[17px] font-semibold text-(--accent)">
                       ./{project.name}
                     </span>
-                    <span className="max-w-[62ch] text-sm leading-[1.55] text-[var(--dim)]">
+                    <span className="max-w-[62ch] text-sm leading-[1.55] text-(--dim)">
                       {project.description ?? "No description yet."}
                     </span>
                   </span>
                 </span>
-                <span className="shrink-0 font-mono text-[13px] text-[var(--dim)]">
+                <span className="shrink-0 font-mono text-[13px] text-(--dim)">
                   open →
                 </span>
               </a>
