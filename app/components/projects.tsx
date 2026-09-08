@@ -49,7 +49,7 @@ export async function Projects() {
             <span className="text-[var(--dim)]"> — ls ./repos</span>
           </span>
           <a
-            href="https://github.com/carvalhocaio"
+            href="https://github.com/carvalhocaio?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs text-[var(--dim)] transition-colors hover:text-[var(--accent)]"
