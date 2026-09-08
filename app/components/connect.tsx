@@ -33,7 +33,7 @@ export function Connect() {
           data-reveal
           className="mb-8 font-mono text-[clamp(15px,2.4vw,20px)] text-(--text)"
         >
-          <span className="text-(--accent)">[ 05 ]</span> contact
+          <span className="text-(--accent)">[ 04 ]</span> contact
           <span className="text-(--dim)"> — curl</span>
         </div>
         <div>

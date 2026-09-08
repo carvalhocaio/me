@@ -46,7 +46,7 @@ export async function Posts() {
           className="mb-8 flex flex-wrap items-baseline justify-between gap-3.5"
         >
           <span className="font-mono text-[clamp(15px,2.4vw,20px)] text-[var(--text)]">
-            <span className="text-[var(--accent)]">[ 04 ]</span> posts
+            <span className="text-[var(--accent)]">[ 03 ]</span> posts
             <span className="text-[var(--dim)]"> — curl dev.to/api</span>
           </span>
           <a

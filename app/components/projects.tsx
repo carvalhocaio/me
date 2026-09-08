@@ -39,7 +39,7 @@ export function Projects() {
           className="mb-8 flex flex-wrap items-baseline justify-between gap-3.5"
         >
           <span className="font-mono text-[clamp(15px,2.4vw,20px)] text-[var(--text)]">
-            <span className="text-[var(--accent)]">[ 03 ]</span> projetos
+            <span className="text-[var(--accent)]">[ 02 ]</span> projetos
             <span className="text-[var(--dim)]"> — ls ./repos</span>
           </span>
           <a

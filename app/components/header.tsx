@@ -2,7 +2,6 @@ import { Container } from "./container";
 import { ThemeToggle } from "./theme-toggle";
 
 const NAV_LINKS = [
-  { href: "#journey", label: "journey" },
   { href: "#now", label: "now" },
   { href: "#projects", label: "projects" },
   { href: "#posts", label: "posts" },

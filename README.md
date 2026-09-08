@@ -12,7 +12,7 @@ Site pessoal de [Caio Carvalho](https://carvalhocaio.github.io/me/) — engenhei
 
 ## Estrutura
 
-Cada seção da página é um componente em `app/components/`: `header`, `hero`, `journey` (jornada), `now` (agora), `projects` (projetos), `posts` (feed do [dev.to](https://dev.to/carvalhocaio), buscado em build-time), `connect` (contato) e `footer`. `Container` centraliza o conteúdo em 8 das 12 colunas da grade a partir do breakpoint `sm`.
+Cada seção da página é um componente em `app/components/`: `header`, `hero`, `now` (agora), `projects` (projetos), `posts` (feed do [dev.to](https://dev.to/carvalhocaio), buscado em build-time), `connect` (contato) e `footer`. `Container` centraliza o conteúdo em 8 das 12 colunas da grade a partir do breakpoint `sm`.
 
 ## Desenvolvimento local
 

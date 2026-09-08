@@ -30,7 +30,7 @@ export function Now() {
           data-reveal
           className="mb-8 font-mono text-[clamp(15px,2.4vw,20px)] text-[var(--text)]"
         >
-          <span className="text-[var(--accent)]">[ 02 ]</span> agora
+          <span className="text-[var(--accent)]">[ 01 ]</span> agora
           <span className="text-[var(--dim)]"> — ps aux</span>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(230px,1fr))] gap-3.5">
