@@ -43,6 +43,12 @@ export function Hero() {
             engenheiro de dados & ia | python · gcp · llms
           </p>
 
+          <p className="max-w-[62ch] text-sm leading-relaxed text-(--dim)">
+            Construo plataformas de dados em escala e sistemas multi-agentes em
+            produção — do CDC e modelagem analítica no BigQuery a agentes no
+            Vertex AI.
+          </p>
+
           <div className="flex items-center gap-2.25 font-mono text-xs text-(--dim)">
             <span className="h-2 w-2 animate-[pulse-dot_2s_ease-in-out_infinite] rounded-full bg-(--accent) motion-reduce:animate-none" />
             status: trabalhando na{" "}
