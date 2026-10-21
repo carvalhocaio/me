@@ -5,17 +5,17 @@ const FOCUS = [
   {
     n: "01",
     title: "pipelines_de_dados",
-    desc: "Orquestração e transformações que mantêm os dados confiáveis, atualizados e prontos para uso — Oracle → BigQuery, Airflow, dbt e CDC via LogMiner.",
+    desc: "Ingestão, CDC e modelagem analítica em escala — Oracle LogMiner → BigQuery, Airflow, dltHub, dbt + MetricFlow e governança no OpenMetadata.",
   },
   {
     n: "02",
     title: "agentes_de_ia",
-    desc: "Agentes em produção sobre LLMs que raciocinam, chamam ferramentas e agem — workflows agênticos, RAG e orquestração de ferramentas.",
+    desc: "Sistemas multi-agentes em produção — Google ADK no Vertex AI, servidores MCP, RAG, guardrails de execução e avaliação automatizada (evals).",
   },
   {
     n: "03",
     title: "arquitetura_backend",
-    desc: "Sistemas construídos para escalar e durar, onde dados e inteligência se encontram — APIs em Python (FastAPI) e integrações REST.",
+    desc: "APIs e plataformas onde dados e inteligência se encontram — serviços em Python (FastAPI), produtos de dados fullstack (Next.js) e integrações corporativas.",
   },
 ];
 
