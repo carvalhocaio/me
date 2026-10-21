@@ -40,7 +40,7 @@ export function Hero() {
           </h1>
 
           <p className="font-mono text-[13px] tracking-[0.02em] text-(--accent)">
-            software · dados · ia
+            engenheiro de dados & ia | python · gcp · llm
           </p>
 
           <div className="flex items-center gap-2.25 font-mono text-xs text-(--dim)">
