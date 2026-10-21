@@ -12,7 +12,7 @@ Site pessoal de [Caio Carvalho](https://carvalhocaio.github.io/me/) — engenhei
 
 ## Estrutura
 
-Cada seção da página é um componente em `app/components/`: `header`, `hero`, `now`, `projects` (os 4 repositórios públicos do GitHub atualizados mais recentemente, buscados no build), `posts` (feed do [dev.to](https://dev.to/carvalhocaio), buscado no build), `connect` e `footer`. O `Container` centraliza o conteúdo em 8 das 12 colunas do grid a partir do breakpoint `md`.
+Cada seção da página é um componente em `app/components/`: `header`, `hero`, `now` (frentes atuais em pipelines/governança de dados, agentes de IA e arquitetura backend), `projects` (os 4 repositórios públicos do GitHub atualizados mais recentemente, buscados no build), `posts` (os 3 artigos mais recentes do [dev.to](https://dev.to/carvalhocaio), buscados no build), `connect` e `footer`. O `Container` centraliza o conteúdo em 8 das 12 colunas do grid a partir do breakpoint `md`, e o currículo atualizado fica em `public/resumee.pdf`.
 
 ## Desenvolvimento local
 
@@ -33,6 +33,6 @@ Gera o export estático em `dist/`.
 
 ## Deploy
 
-Publicado no GitHub Pages via GitHub Actions (`.github/workflows/nextjs.yml`), a cada push na `main` e também uma vez por dia (cron), para manter o feed de posts do dev.to atualizado sem redeploy manual.
+Publicado no GitHub Pages via GitHub Actions (`.github/workflows/nextjs.yml`), a cada push na `main` e também uma vez por dia (cron), para manter a lista de projetos do GitHub e o feed de posts do dev.to atualizados sem redeploy manual.
 
 Site no ar: **https://carvalhocaio.github.io/me/**
