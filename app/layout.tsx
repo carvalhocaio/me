@@ -18,7 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "Caio Carvalho (@carvalhocaio)",
-  description: "Engenheiro de Dados & IA — Python, GCP, LLMs.",
+  description: "Engenheiro de Dados — Python, GCP, LLMs.",
 };
 
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('cc2-theme');if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
@@ -39,7 +39,10 @@ export default function RootLayout({
         {/* biome-ignore lint/security/noDangerouslySetInnerHtml: reads the persisted theme before paint to avoid a flash of the wrong theme */}
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
-      <body className="min-h-screen font-sans antialiased" suppressHydrationWarning>
+      <body
+        className="min-h-screen font-sans antialiased"
+        suppressHydrationWarning
+      >
         <RevealController />
         <Header />
         {children}

@@ -1,6 +1,6 @@
 # carvalhocaio/me
 
-Site pessoal de [Caio Carvalho](https://carvalhocaio.github.io/me/) — engenheiro de dados & IA. Landing page única com identidade visual de terminal (prompt de shell, tema escuro/claro), construída com Next.js.
+Site pessoal de [Caio Carvalho](https://carvalhocaio.github.io/me/) — engenheiro de dados. Landing page única com identidade visual de terminal (prompt de shell, tema escuro/claro), construída com Next.js.
 
 ## Stack
 

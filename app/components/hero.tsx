@@ -40,7 +40,7 @@ export function Hero() {
           </h1>
 
           <p className="font-mono text-[13px] tracking-[0.02em] text-(--accent)">
-            engenheiro de dados & ia | python · gcp · llms
+            engenheiro de dados | python · gcp · llms
           </p>
 
           <p className="max-w-[62ch] text-sm leading-relaxed text-(--dim)">
